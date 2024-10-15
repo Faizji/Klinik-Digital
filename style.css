@@ -1,0 +1,385 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Styling untuk body */
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif; /* Menggunakan font Open Sans */
+    background: linear-gradient(to right, #09f7ef, #b3c2c8); /* Background gradien dari kiri ke kanan */
+}
+
+/* Wrapper umum dengan lebar dan posisi */
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+/* Styling logo */
+.logo a {
+    font-size: 50px;
+    font-weight: 800;
+    float: left;
+    font-family: courier;
+    color: #364f6b;
+}
+
+/* Menu navigasi */
+.menu {
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Styling navigasi */
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; 
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #d1d1d1;
+    z-index: 1;
+    border-bottom: 1px solid #79a2d1;
+}
+
+/* List navigasi */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+}
+
+/* Item navigasi */
+nav ul li {
+    float: none; 
+}
+
+/* Link pada navigasi */
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+}
+
+/* Hover efek untuk navigasi */
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Styling untuk section */
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+/* Kolom deskripsi */
+.kolom {
+    margin: 50px;
+    margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #364f6b;
+}
+
+/* Judul utama */
+h2 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 50px;
+}
+
+/* Tombol dengan kelas tbl-biru */
+a.tbl-biru,
+button.tbl-biru {
+    background: #3f72af;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Hover efek untuk tombol biru */
+a.tbl-biru:hover {
+    background: #fc5185;
+    text-decoration: none;
+}
+
+/* Tombol dengan kelas tbl-pink */
+a.tbl-pink,
+button.tbl-biru {
+    background: #fc5185;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Hover efek untuk tombol pink */
+a.tbl-pink:hover {
+    background: #3f72af;
+    text-decoration: none;
+}
+
+/* Styling untuk paragraf */
+p {
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+/* Pusatkan teks */
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+/* Daftar dokter */
+.doctor-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Kartu untuk dokter */
+.kartu-doctor {
+    width: 20%;
+    margin: 0 auto;
+}
+
+/* Gambar dokter */
+.kartu-doctor img {
+    width: 170px;  
+    height: 250px; 
+    object-fit: cover;
+    border-radius: 15%;  
+    border: 3px solid #e0e0e0;  
+}
+
+/* Nama dokter di kartu */
+.kartu-doctor p{
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+    color: #364f6b;
+}
+
+/* Bagian News */
+.news-list {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Kartu berita dengan ukuran tetap */
+.kartu-berita {
+    flex: 0 0 300px; 
+    margin: 0 10px; 
+    flex-shrink: 0; 
+}
+
+/* Gambar pada kartu berita */
+.kartu-berita img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+}
+
+/* Animasi untuk poster bergerak */
+@keyframes slideNews {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* News slider berjalan secara terus-menerus */
+.news-list {
+    display: flex;
+    animation: slideNews 25s linear infinite; 
+    height: auto; 
+}
+
+/* Daftar mitra */
+.partners-list{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Kartu untuk mitra */
+.kartu-partner{
+    width: 20%;
+    margin: 0 auto;
+}
+
+/* Gambar mitra dengan lingkaran */
+.kartu-partner img{
+    width: 150px;
+    border-radius: 50%;
+}
+
+/* Styling untuk form kontak */
+#contact-form {
+    padding: 40px 0;
+}
+
+.form-container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #02eeff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form di dalam container */
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label dalam form */
+.form-container label {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Input, select, dan textarea di form */
+.form-container input,
+.form-container select,
+.form-container textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/* Efek fokus untuk form */
+.form-container input:focus,
+.form-container select:focus,
+.form-container textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.5);
+    border-color: #00bfff;
+    transform: scale(1.05); 
+}
+
+/* Textarea khusus */
+.form-container textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+/* Tombol kirim di form */
+.form-container button {
+    padding: 12px 20px;
+    background-color: #00bfff; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover efek untuk tombol kirim */
+.form-container button:hover {
+    background-color: #007acc; 
+}
+
+/* Bagian kontak */
+#contact {
+    background:linear-gradient(135deg, #6fcbb1, #7abed7);
+    padding: 50px 20px;
+    border-radius: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling footer */
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-around; 
+}
+
+/* Bagian footer */
+.footer-section {
+    width: 25%; 
+    margin: 10px; 
+}
+
+/* Heading di dalam footer */
+h3 {
+    font-family: 'Comic Sans MS', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 50px;
+    text-align: center; 
+}
+
+/* Bagian copyright */
+#copyright{
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+}
+
+/* Media query untuk perangkat dengan layar kecil */
+@media screen and (max-width: 991.98px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav ul {
+        justify-content: space-around; 
+    }
+
+    nav ul li {
+        float: none;
+    }
+}
